@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist_new/
+.env
+*.log
+.DS_Store
+backend/tests/trace.test.js
+backend/tests/minimal.test.js
+frontend/vite.config.js.timestamp-*.mjs

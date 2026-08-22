@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: studymate-ai
+    env: node
+    plan: free
+    rootDir: .
+    buildCommand: cd frontend && npm install && npm run build && cd ../backend && npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ADMIN_KEY
+        sync: false
+      - key: PORT
+        value: 5000

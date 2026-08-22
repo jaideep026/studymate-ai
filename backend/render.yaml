@@ -1,0 +1,6 @@
+# Superseded — see /render.yaml at the repo root.
+#
+# The backend now serves the built frontend directly (single-service
+# deployment), so the Render blueprint lives at the repository root instead
+# of here. This file is kept only so an old bookmark to this path doesn't
+# 404; Render's Blueprint deploy reads the root-level render.yaml.
